@@ -1,0 +1,7 @@
+download https://micropython.org/download/RPI_PICO2/RPI_PICO2-latest.uf2
+copy onto the RPI_PICO2
+
+pip install mpremote
+
+mpremote connect auto repl 
+
