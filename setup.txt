@@ -5,3 +5,5 @@ pip install mpremote
 
 mpremote connect auto repl 
 
+mpremote connect auto fs cp blinking_onboard_LED.py :main.py
+mpremote reset
