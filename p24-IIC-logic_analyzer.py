@@ -34,3 +34,12 @@ x = i2c.readfrom_mem(DS3231_ADDR, 0x00, 1)
 # marker 7:   ack (0)
 # marker 8:   data 8 bits (0b01011001)
 # marker 9:   nack (1)
+
+i2c.writeto_mem(DS3231_ADDR, 0x00, bytearray([0b11111111]))
+# marker 0:   device address 1101000 (7 bits)
+# marker 1:   write bit 0
+# marker 2:   ack (0)
+# marker 3:   register address 0x00 (8 bits)
+# marker 4:   ack (0)
+# marker 5:   data 8 bits (0b11111111)
+# marker 6:   ack (0)
