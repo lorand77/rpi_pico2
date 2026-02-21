@@ -10,7 +10,7 @@ oled.fill(0)
 
 oled.text("Raspberry Pi Pico 2 is awesome!",0,0)
 
-#oled.text("Pico",0,10)
+oled.pixel(10, 30, 1)
 
 oled.show()
 
