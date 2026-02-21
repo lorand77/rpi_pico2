@@ -11,4 +11,15 @@ mpremote reset
 
 mpremote mip install github:mcauser/micropython-tm1637
 
+download https://github.com/raspberrypi/pico-micropython-examples/blob/master/i2c/1106oled/sh1106.py
+mpremote connect auto fs cp lib/sh1106.py :lib/sh1106.py
+
+
+mpremote connect auto fs cp utils.py :lib/utils.py
+from utils import *
+list_files('/')
+check_system()
+check_memory()
+check_flash()
+
 
